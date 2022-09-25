@@ -1,0 +1,292 @@
+/* Individual */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 1);
+    padding: 5px 0px;
+    width: 100vw;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.link-item {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.link-icon__circle {
+    padding: 5px 8.5px;
+    border-radius: 50%;
+    background: #FFFFFF;
+}
+
+.link-icon {
+    color: black;
+}
+
+.burger {
+    display: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.line {
+    height: 2px;
+    width: 35px;
+    margin: 0.5rem 0;
+    background: #daf8e3;
+    transition: transform 0.75s ease, opacity 0.75s ease;
+}
+
+
+.nav-menu.show .line1 {
+    transform: translate(-10px) rotate(45deg) translate(15px);
+}
+
+.nav-menu.show .line2 {
+    opacity: 0;
+}
+
+.nav-menu.show .line3 {
+    transform: translate(-10px) rotate(-45deg) translate(15px);
+}
+
+.nav-menu.show .navbar-links {
+    transform: translateX(0%);
+}
+
+@media screen and (max-width: 800px) {
+    .burger {
+        display: block;
+    }
+
+    .navbar-links {
+        position: fixed;
+        right: 0;
+        padding: 10px 0px 10px 0px;
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        background: #000000;
+        transform: translateX(100%);
+        transition: transform 1s ease;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* First Section */
+.Row__FirstSection {
+    display: flex;
+}
+
+.Top-half_FirstSection {
+    width: 100%;
+    background: rgba(246, 246, 246, 1);
+}
+
+.BrendingText__FirstSEction {
+    font-weight: 300;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.DentistryText__FirstSection {
+    font-size: 45px;
+    font-weight: 650;
+    text-transform: uppercase;
+}
+
+.TextForDetails {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+/* Our Competencies */
+.OurCompetencies {
+    padding-left: 150px;
+    padding-top: 70px;
+    background: rgba(246, 246, 246, 1);
+    height: 685px;
+
+}
+
+.HeaderText__OurCompetencies {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.Columns__OurCompetencies {
+    display: flex;
+}
+
+.FirstCol__OurCompetencies {
+    padding-right: 8px;
+}
+
+.Col__OurCompetencies {
+    padding: 0 8px;
+}
+
+.Top-Text__OurCompetencies {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.Bottom-Text__OurCompetencies {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+/* Header Block Of Project Examles */
+.HeaderBlockOf__ProjectExamples {
+    height: 150px;
+}
+
+.TextOfHeaderBlock {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 45px;
+    margin-top: 70px;
+    margin-bottom: 37px;
+    margin-left: 150px;
+}
+
+
+/* Project Examples or Second Section */
+.KalenchukClinic {
+    background: rgba(247, 243, 242, 1);
+    padding-top: 60px;
+    height: 1850px;
+    border-top: 4.5px solid rgba(125, 51, 68, 1);
+}
+
+.LAODENT {
+    background: rgba(246, 246, 246, 1);
+    padding-top: 60px;
+    height: 1850px;
+    border-top: 4.5px solid rgba(128, 154, 21, 1);
+}
+
+.UDOU {
+    background: rgba(246, 246, 246, 1);
+    padding-top: 60px;
+    height: 1850px;
+    border-top: 4.5px solid rgba(24, 44, 88, 1);
+}
+
+/* Text Block Of Project Examples */
+.TextBlockOf__ProjectExamples {
+    display: flex;
+    padding-left: 70px;
+    margin-bottom: 30px;
+}
+
+.MainColOf__TextBlock {
+    width: 280px;
+}
+
+.TopHalfOf__MainBlock {
+    font-weight: 500;
+    font-size: 17px;
+    margin: 16px 0 0 0;
+    text-transform: uppercase;
+}
+
+.BottomHalfOf_MainBlock {
+    font-weight: 600;
+    font-size: 40px;
+    margin: 10px 0 0 0;
+}
+
+.row__KalenchukClinic-Textblock {
+    column-gap: 8px;
+    display: flex;
+}
+
+.ColOf__TextBlock {
+    margin-left: 8px;
+}
+
+.TextContentOf__ColumnOfTextBlock {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+/* Images Block */
+.ImagesBlockOf__ProjectExamples {
+    margin-left: 360px;
+}
+
+.ImagesBlock-Top {
+    display: flex;
+    column-gap: 8px;
+    margin-bottom: 8px;
+}
+
+.FirstPicture-ProjectExamples {
+    width: 860px;
+}
+
+.SecondPicture-ProjectExamples {
+    width: 416px;
+}
+
+.ImagesBlock-Bottom {
+    display: flex;
+    column-gap: 8px;
+}
+
+.ImagesBlock-Bottom img {
+    width: 416px;
+}
+
+.ImagesBlock-Bottom_1-2 img {
+    width: 426px;
+}
+
+.ImagesBlock-Bottom_1-2 {
+    display: flex;
+    column-gap: 8px;
+}
+
+/* Video Block */
+.VideoBlockOf__ProjectExamples {
+    display: flex;
+    margin-top: 8px;
+    margin-left: 100px;
+}
+
+.Text-VideoCase {
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-right: 142px;
+}
